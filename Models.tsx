@@ -59,7 +59,6 @@ const Models = () => {
   return (
     <section id="models" className="section-padding bg-ferrari-dark">
       <div className="container-custom">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +75,6 @@ const Models = () => {
           </p>
         </motion.div>
 
-        {/* Models Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {models.map((model, index) => (
             <motion.div
@@ -89,7 +87,6 @@ const Models = () => {
               className="group"
             >
               <div className="bg-ferrari-gray rounded-2xl overflow-hidden card-hover">
-                {/* Image */}
                 <div className="relative h-64 overflow-hidden">
                   <div 
                     className="w-full h-full bg-cover bg-center bg-no-repeat group-hover:scale-110 transition-transform duration-500"
@@ -97,28 +94,24 @@ const Models = () => {
                   ></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-ferrari-dark/80 to-transparent"></div>
                   
-                  {/* Badge */}
                   {model.badge && (
                     <div className="absolute top-4 left-4 bg-ferrari-red text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {model.badge}
                     </div>
                   )}
                   
-                  {/* Price */}
                   <div className="absolute bottom-4 right-4 bg-ferrari-dark/90 backdrop-blur-sm text-white px-4 py-2 rounded-lg">
                     <div className="text-sm text-ferrari-silver">Starting at</div>
                     <div className="text-lg font-bold text-ferrari-red">{model.price}</div>
                   </div>
                 </div>
 
-                {/* Content */}
                 <div className="p-6">
                   <div className="mb-4">
                     <div className="text-sm text-ferrari-silver mb-1">{model.category}</div>
                     <h3 className="text-2xl font-display font-bold text-white mb-2">{model.name}</h3>
                   </div>
 
-                  {/* Specs */}
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="text-center">
                       <div className="text-lg font-bold text-ferrari-red">{model.specs.power}</div>
@@ -134,7 +127,6 @@ const Models = () => {
                     </div>
                   </div>
 
-                  {/* CTA */}
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -149,7 +141,6 @@ const Models = () => {
           ))}
         </div>
 
-        {/* View All Button */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -170,5 +161,6 @@ const Models = () => {
     </section>
   )
 }
+
 
 export default Models 
