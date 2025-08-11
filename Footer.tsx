@@ -51,10 +51,8 @@ const Footer = () => {
   return (
     <footer className="bg-ferrari-dark border-t border-ferrari-gray">
       <div className="container-custom">
-        {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {/* Brand Section */}
             <div className="lg:col-span-1">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -76,7 +74,6 @@ const Footer = () => {
                   passion, and innovation in the automotive world.
                 </p>
                 
-                {/* Social Links */}
                 <div className="flex space-x-4">
                   {socialLinks.map((social) => (
                     <motion.a
@@ -92,7 +89,6 @@ const Footer = () => {
               </motion.div>
             </div>
 
-            {/* Models */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -114,7 +110,6 @@ const Footer = () => {
               </ul>
             </motion.div>
 
-            {/* Racing */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -136,7 +131,6 @@ const Footer = () => {
               </ul>
             </motion.div>
 
-            {/* Experience */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -158,7 +152,6 @@ const Footer = () => {
               </ul>
             </motion.div>
 
-            {/* Company */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -182,7 +175,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Contact Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -215,7 +207,6 @@ const Footer = () => {
           </div>
         </motion.div>
 
-        {/* Bottom Bar */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -242,7 +233,6 @@ const Footer = () => {
         </motion.div>
       </div>
 
-      {/* Scroll to Top Button */}
       <motion.button
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -258,5 +248,6 @@ const Footer = () => {
     </footer>
   )
 }
+
 
 export default Footer 
