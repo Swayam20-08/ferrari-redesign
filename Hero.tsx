@@ -6,7 +6,6 @@ import { ChevronDown, Play, ArrowRight } from 'lucide-react'
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video/Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ferrari-dark/50 to-ferrari-dark"></div>
         <div 
@@ -17,7 +16,6 @@ const Hero = () => {
         ></div>
       </div>
 
-      {/* Content */}
       <div className="relative z-10 container-custom text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -25,7 +23,6 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          {/* Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -36,7 +33,6 @@ const Hero = () => {
             <span className="text-ferrari-red font-medium text-sm">NEW MODEL LAUNCH</span>
           </motion.div>
 
-          {/* Main Title */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -50,7 +46,6 @@ const Hero = () => {
             </span>
           </motion.h1>
 
-          {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,7 +56,6 @@ const Hero = () => {
             The most powerful Ferrari ever built for the road.
           </motion.p>
 
-          {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -82,7 +76,6 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -110,7 +103,6 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -128,5 +120,6 @@ const Hero = () => {
     </section>
   )
 }
+
 
 export default Hero 
