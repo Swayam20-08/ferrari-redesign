@@ -38,7 +38,6 @@ const Header = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
@@ -51,7 +50,6 @@ const Header = () => {
             </span>
           </motion.div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <motion.a
@@ -65,7 +63,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -93,7 +90,6 @@ const Header = () => {
             </motion.button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden text-white"
@@ -102,7 +98,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -134,5 +129,6 @@ const Header = () => {
     </motion.header>
   )
 }
+
 
 export default Header 
