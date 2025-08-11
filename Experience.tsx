@@ -61,7 +61,6 @@ const Experience = () => {
   return (
     <section id="experience" className="section-padding bg-gradient-to-b from-ferrari-gray to-ferrari-dark">
       <div className="container-custom">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -78,7 +77,6 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        {/* Experiences Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {experiences.map((experience, index) => (
             <motion.div
@@ -91,7 +89,6 @@ const Experience = () => {
               className="group"
             >
               <div className="bg-ferrari-dark rounded-2xl overflow-hidden card-hover">
-                {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <div 
                     className="w-full h-full bg-cover bg-center bg-no-repeat group-hover:scale-110 transition-transform duration-500"
@@ -99,14 +96,12 @@ const Experience = () => {
                   ></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-ferrari-dark/80 to-transparent"></div>
                   
-                  {/* Rating */}
                   <div className="absolute top-4 right-4 bg-ferrari-dark/90 backdrop-blur-sm text-white px-3 py-1 rounded-lg flex items-center space-x-1">
                     <Star size={16} className="text-ferrari-gold fill-current" />
                     <span className="text-sm font-semibold">{experience.rating}</span>
                   </div>
                 </div>
 
-                {/* Content */}
                 <div className="p-6">
                   <h3 className="text-xl font-display font-bold text-white mb-2">
                     {experience.title}
@@ -115,7 +110,6 @@ const Experience = () => {
                     {experience.description}
                   </p>
 
-                  {/* Details */}
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center space-x-2 text-ferrari-silver">
                       <MapPin size={16} />
@@ -131,7 +125,6 @@ const Experience = () => {
                     </div>
                   </div>
 
-                  {/* Price and CTA */}
                   <div className="flex items-center justify-between">
                     <div className="text-ferrari-red font-bold">{experience.price}</div>
                     <motion.button
@@ -149,7 +142,6 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* Upcoming Events */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -206,7 +198,6 @@ const Experience = () => {
           </div>
         </motion.div>
 
-        {/* CTA Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -246,5 +237,6 @@ const Experience = () => {
     </section>
   )
 }
+
 
 export default Experience 
