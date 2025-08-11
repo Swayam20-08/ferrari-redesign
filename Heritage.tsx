@@ -46,7 +46,6 @@ const Heritage = () => {
   return (
     <section id="heritage" className="section-padding bg-gradient-to-b from-ferrari-dark to-ferrari-gray">
       <div className="container-custom">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +62,6 @@ const Heritage = () => {
           </p>
         </motion.div>
 
-        {/* Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,12 +87,9 @@ const Heritage = () => {
           </div>
         </motion.div>
 
-        {/* Timeline */}
         <div className="relative">
-          {/* Timeline Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-ferrari-red/30 h-full hidden lg:block"></div>
 
-          {/* Timeline Items */}
           <div className="space-y-12">
             {milestones.map((milestone, index) => (
               <motion.div
@@ -107,7 +102,6 @@ const Heritage = () => {
                   index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
                 } flex-col lg:space-x-8 space-y-4 lg:space-y-0`}
               >
-                {/* Content */}
                 <div className={`lg:w-1/2 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'} text-center lg:text-left`}>
                   <div className="bg-ferrari-gray rounded-2xl p-8 card-hover">
                     <div className="flex items-center space-x-4 mb-4">
@@ -123,19 +117,16 @@ const Heritage = () => {
                   </div>
                 </div>
 
-                {/* Timeline Dot */}
                 <div className="relative lg:flex-1 flex justify-center">
                   <div className="w-4 h-4 bg-ferrari-red rounded-full border-4 border-ferrari-dark z-10"></div>
                 </div>
 
-                {/* Empty space for alignment */}
                 <div className="lg:w-1/2"></div>
               </motion.div>
             ))}
           </div>
         </div>
 
-        {/* Quote Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -156,5 +147,6 @@ const Heritage = () => {
     </section>
   )
 }
+
 
 export default Heritage 
