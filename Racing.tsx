@@ -49,7 +49,6 @@ const Racing = () => {
   return (
     <section id="racing" className="section-padding bg-ferrari-dark">
       <div className="container-custom">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +65,6 @@ const Racing = () => {
           </p>
         </motion.div>
 
-        {/* Racing Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -96,7 +94,6 @@ const Racing = () => {
           ))}
         </motion.div>
 
-        {/* Current Season */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +110,6 @@ const Racing = () => {
             </p>
           </div>
 
-          {/* Drivers */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {currentDrivers.map((driver, index) => (
               <motion.div
@@ -144,7 +140,6 @@ const Racing = () => {
           </div>
         </motion.div>
 
-        {/* Racing Heritage */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -189,5 +184,6 @@ const Racing = () => {
     </section>
   )
 }
+
 
 export default Racing 
